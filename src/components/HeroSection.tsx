@@ -5,7 +5,7 @@ import PixelBlast from './PixelBlast';
 import GradientText from './GradientText';
 import ScrollVelocity from './ScrollVelocity';
 
-const MARQUEE = ['JavaScript', 'TypeScript', 'React', 'HTML5', 'TailwindCSS', 'Python', 'Node.js', 'Three.js', 'GSAP', 'Figma'];
+const MARQUEE = ['JavaScript', 'TypeScript', 'React', 'TailwindCSS', 'Python', 'Node.js', 'Figma'];
 
 export default function HeroSection() {
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -43,11 +43,11 @@ export default function HeroSection() {
 
         <h1 ref={headingRef} className="font-display font-bold leading-none tracking-tighter mb-4"
           style={{ fontSize: 'clamp(4rem, 12vw, 9rem)', perspective: '800px' }}>
-          {['Adit', 'Kusuma'].map((word, wi) => (
+          {['Muhammad', 'Althafino'].map((word, wi) => (
             <span key={wi} className="block overflow-hidden">
               {word.split('').map((char, ci) => (
                 <span key={ci} className="ch inline-block"
-                  style={{ color: wi === 0 ? '#ffffff' : 'transparent', WebkitTextStroke: wi === 1 ? '1px rgba(177,158,239,0.45)' : '0', opacity: 0 }}>
+                  style={{ color: wi === 0 ? 'transparent' : '#ffffff', WebkitTextStroke: wi === 1 ? '0' : '01px rgba(177,158,239,0.45)', opacity: 0 }}>
                   {char}
                 </span>
               ))}
@@ -55,14 +55,14 @@ export default function HeroSection() {
           ))}
         </h1>
 
-        <p className="font-mono text-sm tracking-widest uppercase mb-6" style={{ color: '#444' }}>
-          Student · Web Developer · 15 y.o.
+        <p className="font-mono text-sm tracking-widest uppercase mb-6" style={{ color: '#fff' }}>
+          Undergraduate Data Science Student of Information Technology and Data Science at Sebelas Maret University
         </p>
 
         <p ref={subRef} className="opacity-0 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed" style={{ color: '#666' }}>
-          Pelajar 15 tahun yang membangun{' '}
-          <GradientText colors={['#B19EEF', '#5227FF', '#FF9FFC']} animationSpeed={4}>pengalaman web yang keren</GradientText>.
-          {' '}Belajar setiap hari, satu commit satu langkah maju.
+          Mahasiswa Sains Data yang membuat{' '}
+          <GradientText colors={['#B19EEF', '#5227FF', '#FF9FFC']} animationSpeed={4}>berbagai projek Data Science</GradientText>.
+          {' '}git add - git commit - git push.
         </p>
 
         <div ref={ctaRef} className="opacity-0 flex flex-wrap gap-4 justify-center">

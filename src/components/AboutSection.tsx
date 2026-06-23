@@ -8,11 +8,11 @@ import GradientText from './GradientText';
 gsap.registerPlugin(ScrollTrigger);
 
 const INFO = [
-  { label: 'Nama',       value: 'Adit Kusuma', icon: '✨' },
-  { label: 'Umur',       value: '15 Tahun',    icon: '🎂' },
+  { label: 'Nama',       value: 'Muhammad Althafino', icon: '✨' },
+  { label: 'Umur',       value: '21 Tahun',    icon: '🎂' },
   { label: 'Gender',     value: 'Male',        icon: '👤' },
-  { label: 'Pendidikan', value: 'Pelajar',     icon: '🎓' },
-  { label: 'Status',     value: 'Pelajar',     icon: '📚' },
+  { label: 'Pendidikan', value: 'S1 Sains Data',     icon: '🎓' },
+  { label: 'Status',     value: 'Mahasiswa',     icon: '📚' },
   { label: 'Location',   value: 'Indonesia',   icon: '🌏' },
 ];
 
@@ -97,7 +97,7 @@ export default function AboutSection() {
             <TiltCard
               src={MEDIA_SRC}
               isVideo={USE_VIDEO}
-              alt="Adit Kusuma"
+              alt="Muhammad Althafino"
               style={{ width: '100%', height: '100%' }}
             >
               <div
@@ -121,8 +121,8 @@ export default function AboutSection() {
                     👤
                   </div>
                   <div>
-                    <p className="font-display font-bold text-white text-lg">Adit Kusuma</p>
-                    <p className="font-mono text-xs mt-1" style={{ color: '#B19EEF' }}>Web Developer</p>
+                    <p className="font-display font-bold text-white text-lg">Muhammad Althafino</p>
+                    <p className="font-mono text-xs mt-1" style={{ color: '#B19EEF' }}>Data Scientist</p>
                   </div>
                   <div className="flex gap-1.5">
                     {[1,2,3,4,5].map(i => (
@@ -150,14 +150,14 @@ export default function AboutSection() {
               <p className="text-lg leading-relaxed" style={{ color: '#888' }}>
                 Halo! Saya{' '}
                 <GradientText colors={['#B19EEF', '#5227FF', '#FF9FFC']} animationSpeed={5}>
-                  Adit Kusuma
+                  Muhammad Althafino
                 </GradientText>
-                , seorang pelajar berusia 15 tahun yang passionate di dunia web development dan teknologi.
+                , seorang mahasiswa berusia 21 tahun yang passionate di dunia data dan teknologi.
               </p>
               <p className="text-base leading-relaxed" style={{ color: '#555' }}>
-                Meski masih muda, saya terus belajar dan mengembangkan skill di bidang JavaScript, TypeScript,
-                React, dan Python. Saya percaya tidak ada kata terlalu dini untuk mulai berkarya di dunia digital.
-                Setiap hari adalah kesempatan belajar hal baru!
+                Seorang data enthusiast yang sedang berusaha jatuh bangun di tengah gempuran ekonomi yang semakin mencekik.
+                Inovasi dalam dunia teknologi akan terus berkembang, oleh karena itu saya semakin tertantang untuk menciptakan hal baru untuk mencapai mimpi saya.
+                Semangat pol dalam belajar Python, Machine Learning, Data Science, dan Data Engineering!
               </p>
             </div>
 
@@ -183,11 +183,11 @@ export default function AboutSection() {
               style={{ background: 'rgba(177,158,239,0.03)', border: '1px solid rgba(177,158,239,0.09)' }}
             >
               <p className="text-sm leading-relaxed italic" style={{ color: '#555' }}>
-                "Muda bukan halangan. Setiap baris kode yang saya tulis adalah langkah menuju masa depan yang saya impikan."
+                "Jangan pake AI terus, mas."
               </p>
               <div className="mt-3 flex items-center gap-2">
                 <div className="w-5 h-px" style={{ background: 'rgba(177,158,239,0.35)' }} />
-                <span className="text-xs font-mono" style={{ color: '#B19EEF' }}>Developer Motto</span>
+                <span className="text-xs font-mono" style={{ color: '#B19EEF' }}>Data Motto</span>
               </div>
             </div>
           </motion.div>

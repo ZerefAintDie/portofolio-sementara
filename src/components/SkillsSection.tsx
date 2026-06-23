@@ -8,17 +8,15 @@ import ScrollVelocity from './ScrollVelocity';
 gsap.registerPlugin(ScrollTrigger);
 
 const SKILLS = [
-  { name: 'JavaScript', level: 80, color: '#f7df1e' },
+  { name: 'Python',     level: 95, color: '#4b8bbe' },
+  { name: 'Figma',    level: 95, color: '#360f5a' },
+  { name: 'PowerBI',    level: 90, color: '#06402b' },
+  { name: 'React',      level: 85, color: '#61dafb' },
+  { name: 'TailwindCSS',level: 85, color: '#38bdf8' },
   { name: 'TypeScript', level: 70, color: '#3178c6' },
-  { name: 'React',      level: 75, color: '#61dafb' },
-  { name: 'HTML5',      level: 90, color: '#e34f26' },
-  { name: 'CSS3',       level: 85, color: '#1572b6' },
-  { name: 'TailwindCSS',level: 80, color: '#38bdf8' },
-  { name: 'Python',     level: 65, color: '#4b8bbe' },
-  { name: 'GSAP',       level: 60, color: '#88ce02' },
 ];
 
-const TOOLS = ['VS Code','Git','GitHub','Figma','Vite','npm','Vercel','Netlify','Postman','ESLint'];
+const TOOLS = ['VS Code','Git','GitHub','Figma','Vite','npm','Vercel','Postman','ESLint'];
 
 export default function SkillsSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -80,7 +78,7 @@ export default function SkillsSection() {
             </div>
 
             <div className="grid grid-cols-3 gap-3">
-              {[{ n: '10+', label: 'Projects' }, { n: '1+', label: 'Tahun Coding' }, { n: '5+', label: 'Tech Stack' }].map((s) => (
+              {[{ n: '20+', label: 'Projects' }, { n: '2+', label: 'Tahun Coding' }, { n: '5+', label: 'Tech Stack' }].map((s) => (
                 <div key={s.label} className="glass-card rounded-2xl p-5 text-center">
                   <p className="font-display font-bold text-2xl mb-1 gradient-text-accent">{s.n}</p>
                   <p className="text-xs font-mono" style={{ color: '#444' }}>{s.label}</p>
@@ -93,7 +91,7 @@ export default function SkillsSection() {
 
       <div className="mt-20" style={{ borderTop: '1px solid rgba(255,255,255,0.04)', borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
         <ScrollVelocity
-          texts={['JavaScript · TypeScript · React · TailwindCSS · Python · GSAP · Node.js · HTML5', 'CSS3 · Figma · Git · Vite · Vercel · REST API · Three.js']}
+          texts={['JavaScript · TypeScript · React · TailwindCSS · Python · Node.js · ', 'Figma · Git · Vite · Vercel · REST API · ']}
           velocity={45} className="text-xs font-mono" />
       </div>
     </section>

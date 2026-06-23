@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import gsap from 'gsap';
 
 const ICONS = [
+  { label: 'PY',   color: '#4b8bbe', bg: 'rgba(75,139,190,0.15)' },
   { label: 'TSX',  color: '#3178c6', bg: 'rgba(49,120,198,0.15)' },
   { label: 'JS',   color: '#f7df1e', bg: 'rgba(247,223,30,0.15)' },
   { label: 'HTML', color: '#e34f26', bg: 'rgba(227,79,38,0.15)' },
   { label: 'TW',   color: '#38bdf8', bg: 'rgba(56,189,248,0.15)' },
-  { label: 'PY',   color: '#4b8bbe', bg: 'rgba(75,139,190,0.15)' },
 ];
 
 const TEXT = 'Welcome To My Portofolio';
